@@ -15,7 +15,7 @@ return [
         [
             'text' => 'Minhas Impressões',
             'url'  => '/printings',
-            'can'  => ''
+            'can'  => 'printings.index'
         ],
         [
             'text' => 'Administrar impressões',

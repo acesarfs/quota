@@ -27,6 +27,8 @@ class PrintingController extends Controller
     public function index(Request $request)
     {
         # printings
+//        $this->authorize('printings.viewAny');
+
         $user = \Auth::user();
         $printings = Printing::where('user', '=', $user->codpes);
         $quantidades = $this->quantidades($user->codpes, 'user');
